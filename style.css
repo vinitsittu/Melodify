@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 100px;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin-right: auto;
+}
+
+#search-input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 20px;
+    
+}
+
+#search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#search-button:hover {
+    background-color:#1db954; /* Hover color */
+}
+
+
+
+.container {
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color:#000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    
+
+}
+
+.hidden {
+    display: none;
+    
+}
+
+.tracks-container {
+    /* background-color: #222; */
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.track-card {
+    color: white;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color:008080;
+    overflow: hidden; /* Ensure button stays within the bounds of the card */
+}
+
+.track-card img {
+    width: 100%;
+    border-radius: 10px;
+    /* height: 50%; */
+}
+
+.track-card button {
+    position: absolute;
+    
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10; /* Ensure button appears on top of the image */
+}
+
+.track-card button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #000000;
+    color: white;
+}

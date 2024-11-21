@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 style="font-size: 30px;">Melodify</h1>
+        <input type="text" id="search-input" placeholder="Search for music...">
+        <button id="search-button">Search</button>
+    </nav>
+    <div id="container"  class="container">
+        <div id="backgroundimage">
+            <img style="width: 1000px; height: 550px; border-radius: 20px; margin-left: 35px;" src="backg.png" alt="">
+
+        </div>
+        <div id="loading-spinner" class="spinner hidden">Loading...</div>
+        <div id="tracks-container" class="tracks-container">
+            <!-- <div class="tracks-container-track-card">
+
+            </div> -->
+        </div>
+        <div class="pagination-buttons">
+            <button style="background-color: black; color: white; border: none; font-size: 20px;" id="prev-page" disabled>Previous</button>
+            <button style="background-color: black; color: white; border: none; font-size: 20px;" id="next-page " >Next</button>
+        </div>
+        <p id="message" class="error-message"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
